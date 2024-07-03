@@ -16,4 +16,6 @@ app.post("/code", bodyParser.text(), async (req, res) => {
   }
 });
 
-app.listen(4000);
+app.listen(4000, () => {
+  console.log(`server started at: http://localhost:4000 🚀 `);
+});
